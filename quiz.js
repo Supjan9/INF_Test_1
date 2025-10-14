@@ -70,3 +70,34 @@ function submitQuiz() {
     // Scroll to results
     document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
 }
+
+// Burger menu toggle - OUTSIDE of submitQuiz function
+document.addEventListener('DOMContentLoaded', function () {
+    // Create burger menu if it doesn't exist
+    const navbar = document.querySelector('.navbar');
+    if (navbar && !document.querySelector('.burger-menu')) {
+        const burgerMenu = document.createElement('div');
+        burgerMenu.className = 'burger-menu';
+        burgerMenu.innerHTML = '<span></span><span></span><span></span>';
+        navbar.insertBefore(burgerMenu, navbar.firstChild);
+    }
+
+    const burger = document.querySelector('.burger-menu');
+    const navUl = document.querySelector('.navbar ul');
+
+    if (burger && navUl) {
+        burger.addEventListener('click', function () {
+            this.classList.toggle('active');
+            navUl.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.navbar a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                burger.classList.remove('active');
+                navUl.classList.remove('active');
+            });
+        });
+    }
+});
