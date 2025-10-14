@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Test 1</a></li>
+            <li><a href="test2.html" class="active">Test 2</a></li>
+            <li><a href="test3.html">Test 3</a></li>
+            <li><a href="test4.html">Test 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Infra Zwischentest 1</h1>
+
+        <div id="quiz">
+            <div class="question">
+                <h3>17. Welche der folgenden Aussagen beschreibt den Prozess der Kapselung im OSI-Modell am besten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q17a1" data-correct="false">
+                        <label for="q17a1">Es beinhaltet nur die obersten drei Schichten des OSI-Modells</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q17a2" data-correct="false">
+                        <label for="q17a2">Es handelt sich um den Prozess, bei dem die physische Schicht Bits in Daten
+                            umwandelt</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q17a3" data-correct="true">
+                        <label for="q17a3">Es handelt sich um den Prozess des Hinzufügens von Header und Trailer zu
+                            Daten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q17a4" data-correct="false">
+                        <label for="q17a4">Es handelt sich um das Verfahren zur Entfernung von Header und Trailer am
+                            Empfängerende</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>18. Was ist der Zweck einer IP-Adresse in einem Computernetzwerk?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q18a1" data-correct="false">
+                        <label for="q18a1">Zur Verbesserung der Computerleistung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q18a2" data-correct="false">
+                        <label for="q18a2">Zum Senden von E-Mails</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q18a3" data-correct="false">
+                        <label for="q18a3">Zur Verschlüsselung von Daten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q18a4" data-correct="true">
+                        <label for="q18a4">Zur Identifizierung und Lokalisierung von Geräten in einem Netzwerk</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>19. Welche Rolle spielt das Internet Control Message Protocol (ICMP) in Bezug auf IP?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q19a1" data-correct="false">
+                        <label for="q19a1">Es handelt sich um eine erweiterte Version von IP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q19a2" data-correct="false">
+                        <label for="q19a2">Es schützt das Netzwerk vor Malware und Cyberangriffen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q19a3" data-correct="false">
+                        <label for="q19a3">Es ermöglicht die Erkennung von Netzwerkgeräten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q19a4" data-correct="true">
+                        <label for="q19a4">Es wird verwendet, um Fehlermeldungen und Betriebsinformationen in
+                            IP-Umgebungen zu übertragen</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>20. Wie viele Subnetze können Sie aus einem Netzwerk mit einer Netzmaske von 255.255.255.0
+                    erstellen, wenn Sie eine Subnetzmaske von 255.255.255.128 verwenden?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q20a1" data-correct="true">
+                        <label for="q20a1">2</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q20a2" data-correct="false">
+                        <label for="q20a2">4</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q20a3" data-correct="false">
+                        <label for="q20a3">8</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q20a4" data-correct="false">
+                        <label for="q20a4">1</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>21. Wer erhält die ARP-Requests und wie wird damit umgegangen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q21a1" data-correct="false">
+                        <label for="q21a1">Der erste Client im Netzwerk erhält den Request / wenn es nicht seine
+                            IP-Adresse ist, leitet er den Request an den nächsten Client weiter</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q21a2" data-correct="false">
+                        <label for="q21a2">Der NAT-Router erhält den Request / überprüft mittels NAT-Tabelle welcher
+                            Client zuletzt welche Pakete versendet hat</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q21a3" data-correct="true">
+                        <label for="q21a3">Jeder Client im Netzwerk erhält den Request / überprüft ob es sich um seine
+                            IP-Adresse handelt</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q21a4" data-correct="false">
+                        <label for="q21a4">Der Router erhält den Request / er passt die Größe des Datenpakets an die MTU
+                            des Protokolls an</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q21a5" data-correct="false">
+                        <label for="q21a5">Der ARP-Server erhält den Request / überprüft welchem Client die MAC-Adresse
+                            zugeordnet wurde</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>22. Welche Flags werden zum 3-Way Handshake benötigt?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q22a1" data-correct="false">
+                        <label for="q22a1">FIN</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q22a2" data-correct="true">
+                        <label for="q22a2">SYN</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q22a3" data-correct="true">
+                        <label for="q22a3">ACK</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q22a4" data-correct="false">
+                        <label for="q22a4">RST</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q22a5" data-correct="false">
+                        <label for="q22a5">PSH</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q22a6" data-correct="false">
+                        <label for="q22a6">URG</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>23. UDP wird für folgende Anwendungen verwendet: (zutreffende ankreuzen)</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q23a1" data-correct="true">
+                        <label for="q23a1">TFTP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a2" data-correct="true">
+                        <label for="q23a2">DNS</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a3" data-correct="true">
+                        <label for="q23a3">VoIP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a4" data-correct="true">
+                        <label for="q23a4">Streaming</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a5" data-correct="false">
+                        <label for="q23a5">FTP, SFTP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a6" data-correct="true">
+                        <label for="q23a6">DHCP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a7" data-correct="false">
+                        <label for="q23a7">Messaging</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q23a8" data-correct="false">
+                        <label for="q23a8">POP3 (Email)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>24. Das Sliding Window dient wozu?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q24a1" data-correct="false">
+                        <label for="q24a1">Namensauflösung von mehreren Domainnamen auf einmal, nicht nur einem</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q24a2" data-correct="false">
+                        <label for="q24a2">Berechnung des richtigen Empfangsports</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q24a3" data-correct="false">
+                        <label for="q24a3">Checksummenberechnung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q24a4" data-correct="true">
+                        <label for="q24a4">Datenflusskontrolle</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>25. Welche Bestandteile befinden sich im IPv4-Header?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q25a1" data-correct="true">
+                        <label for="q25a1">Destination Address</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q25a2" data-correct="true">
+                        <label for="q25a2">TTL (Time to Live)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q25a3" data-correct="false">
+                        <label for="q25a3">MAC Address Translation</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q25a4" data-correct="true">
+                        <label for="q25a4">Protocol</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q25a5" data-correct="false">
+                        <label for="q25a5">Fastest Route</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q25a6" data-correct="true">
+                        <label for="q25a6">Source Address</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>26. Das PUSH-Flag veranlasst was?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q26a1" data-correct="false">
+                        <label for="q26a1">Sofortiges Senden aller Daten aus dem Empfangspuffer an den Prozess</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q26a2" data-correct="true">
+                        <label for="q26a2">Sofortiges Senden aller Daten aus dem Sendepuffer an den Empfänger</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q26a3" data-correct="false">
+                        <label for="q26a3">Sofortige Beendigung der TCP-Verbindung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q26a4" data-correct="false">
+                        <label for="q26a4">Ermöglicht vorrangiges Routing von wichtigen Datenpaketen auf
+                            Internet-Routern</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>27. Was steuert die Flusskontrolle des Absenders?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q27a1" data-correct="false">
+                        <label for="q27a1">Die Größe des eigenen Empfangsbuffers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q27a2" data-correct="false">
+                        <label for="q27a2">Roundtrip Time der Datenpakete vom Sender zum Empfänger und zurück</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q27a3" data-correct="false">
+                        <label for="q27a3">Die Schreib-/Leserate des Sendeprozesses in den Sendepuffer</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q27a4" data-correct="false">
+                        <label for="q27a4">MTU der Leitung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q27a5" data-correct="true">
+                        <label for="q27a5">Die Window-Size, die der Empfänger überträgt</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>28. TCP bietet welche Funktionen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q28a1" data-correct="false">
+                        <label for="q28a1">Vertraulichkeit</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q28a2" data-correct="false">
+                        <label for="q28a2">Sender Identification</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q28a3" data-correct="true">
+                        <label for="q28a3">Zuverlässigkeit</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q28a4" data-correct="true">
+                        <label for="q28a4">Flusskontrolle</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q28a5" data-correct="false">
+                        <label for="q28a5">Datenintegrität</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>29. Multiplexing bei TCP wird wofür verwendet?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q29a1" data-correct="false">
+                        <label for="q29a1">Flusskontrolle</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q29a2" data-correct="false">
+                        <label for="q29a2">Sortierung der Pakete</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q29a3" data-correct="false">
+                        <label for="q29a3">Verbindungsaufbau</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q29a4" data-correct="false">
+                        <label for="q29a4">Fehlererkennung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q29a5" data-correct="true">
+                        <label for="q29a5">Interprozesskommunikation</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>30. TCP Acknowledgement Number</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q30a1" data-correct="true">
+                        <label for="q30a1">Die TCP Acknowledgement Number gibt an, welche Sequence Number als Nächste
+                            vom Sender erwartet wird</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q30a2" data-correct="false">
+                        <label for="q30a2">Die TCP Acknowledgement Number errechnet sich aus der letzten Sequence Number
+                            + 1</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q30a3" data-correct="false">
+                        <label for="q30a3">Sender sendet ACK Number an den Empfänger</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q30a4" data-correct="false">
+                        <label for="q30a4">Die TCP Acknowledgement Number errechnet sich aus den letzten empfangenen
+                            Bytes -1</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q30a5" data-correct="true">
+                        <label for="q30a5">Empfänger sendet ACK Number an den Sender</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>31. Die Zuordnung der richtigen Position im Bytestrom von Daten, die via TCP übertragen werden, wird
+                    wodurch erreicht?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q31a1" data-correct="true">
+                        <label for="q31a1">Sequenznummer</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q31a2" data-correct="false">
+                        <label for="q31a2">Paketlänge</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q31a3" data-correct="false">
+                        <label for="q31a3">Window Size</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q31a4" data-correct="false">
+                        <label for="q31a4">Acknowledgement Number</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q31a5" data-correct="false">
+                        <label for="q31a5">Socket-Adresse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>32. Auf welchem Layer geschieht die logische Adressierung der Endgeräte?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q32a1" data-correct="false">
+                        <label for="q32a1">Transport</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q32a2" data-correct="false">
+                        <label for="q32a2">Session</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q32a3" data-correct="true">
+                        <label for="q32a3">Network</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q32a4" data-correct="false">
+                        <label for="q32a4">Data Link</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>33. Kreuzen Sie die zutreffenden Aussagen des OSI Modells an!</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q33a1" data-correct="false">
+                        <label for="q33a1">Daten der jeweilig niedrigeren Schicht werden in ein eigenes Paket gepackt
+                            und mit einem eigenen Layerheader versehen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a2" data-correct="false">
+                        <label for="q33a2">Daten der jeweilig höheren Schicht werden in ein eigenes Paket gepackt und
+                            mit einem eigenen Layerheader versehen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a3" data-correct="true">
+                        <label for="q33a3">Upper Layer: Interaktion mit dem User sowie die Implementierung von
+                            Software</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a4" data-correct="false">
+                        <label for="q33a4">Upper Layer: Ziel ist der Transport der Daten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a5" data-correct="true">
+                        <label for="q33a5">Unterteilt in 7 Schichten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a6" data-correct="true">
+                        <label for="q33a6">Je höher die Nummer desto softwarelastiger</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a7" data-correct="false">
+                        <label for="q33a7">Unterteilt in 8 Schichten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q33a8" data-correct="false">
+                        <label for="q33a8">Je höher die Nummer desto hardwarelastiger</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>34. Welche Aussage(n) zu IPv4 ist/sind wahr?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q34a1" data-correct="true">
+                        <label for="q34a1">Ist ein geroutetes Protokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q34a2" data-correct="true">
+                        <label for="q34a2">TCP und UDP setzen auf IPv4 auf</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q34a3" data-correct="false">
+                        <label for="q34a3">IPv4 besitzt nahezu unendlich viele eindeutige Adressen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q34a4" data-correct="false">
+                        <label for="q34a4">IPv4-Adressen werden dezimal in 5 Blöcken geschrieben</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q34a5" data-correct="false">
+                        <label for="q34a5">IPv4-Header haben eine dynamische Länge von mind. 2 Byte bis max. 16
+                            Byte</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="submit-btn" onclick="submitQuiz()">Finish Quiz</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>Quiz Results</h2>
+            <div class="score" id="score"></div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

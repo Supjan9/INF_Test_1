@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Test 1</a></li>
+            <li><a href="test2.html">Test 2</a></li>
+            <li><a href="test3.html" class="active">Test 3</a></li>
+            <li><a href="test4.html">Test 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Infra Zwischentest 1</h1>
+
+        <div id="quiz">
+            <div class="question">
+                <h3>35. Kreuzen Sie die zutreffenden Aussagen an</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q35a1" data-correct="false">
+                        <label for="q35a1">“Sender Window” – Buffer des Senders</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q35a2" data-correct="true">
+                        <label for="q35a2">“Receive Window” – Buffer des Empfängers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q35a3" data-correct="true">
+                        <label for="q35a3">Maximale Datenmenge, die ein Host auf einmal empfangen kann</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q35a4" data-correct="false">
+                        <label for="q35a4">Window Size bestimmt die Menge an Paketen bis FIN gesendet wird</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q35a5" data-correct="true">
+                        <label for="q35a5">Window Size bestimmt die Menge an Paketen bis ACK gesendet wird</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>36. Was ist im UDP-Header enthalten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q36a1" data-correct="true">
+                        <label for="q36a1">Quellport</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q36a2" data-correct="false">
+                        <label for="q36a2">Sequenznummer</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q36a3" data-correct="false">
+                        <label for="q36a3">Acknowledgement-Number</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q36a4" data-correct="true">
+                        <label for="q36a4">Prüfsumme</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>37. Was lässt sich NICHT im UDP-Header finden?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q37a1" data-correct="false">
+                        <label for="q37a1">Data</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a2" data-correct="true">
+                        <label for="q37a2">Sequence Number</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a3" data-correct="false">
+                        <label for="q37a3">Destination Port</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a4" data-correct="false">
+                        <label for="q37a4">Length</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a5" data-correct="false">
+                        <label for="q37a5">Checksum</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a6" data-correct="false">
+                        <label for="q37a6">Source Port</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q37a7" data-correct="true">
+                        <label for="q37a7">Window Size</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>38. Der Verbindungsaufbau bei TCP heißt</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q38a1" data-correct="false">
+                        <label for="q38a1">Negotiation Establishment</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q38a2" data-correct="false">
+                        <label for="q38a2">Freeway</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q38a3" data-correct="true">
+                        <label for="q38a3">3-Way Handshake</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q38a4" data-correct="false">
+                        <label for="q38a4">Authentication Header Exchange</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q38a5" data-correct="false">
+                        <label for="q38a5">Bei dem Protokoll gibt es gar keinen Verbindungsaufbau</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>39. TCP-Charakteristika sind:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q39a1" data-correct="true">
+                        <label for="q39a1">Verbindungsorientiertheit</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q39a2" data-correct="true">
+                        <label for="q39a2">Positive Bestätigung (Acknowledged)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q39a3" data-correct="true">
+                        <label for="q39a3">Flusskontrolle</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q39a4" data-correct="true">
+                        <label for="q39a4">Bidirektionalität</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q39a5" data-correct="false">
+                        <label for="q39a5">Garantiert den Empfang der Pakete</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q39a6" data-correct="false">
+                        <label for="q39a6">Bietet Security</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>40. Kreuzen Sie zutreffende Eigenschaften von UDP an.</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q40a1" data-correct="false">
+                        <label for="q40a1">schweres Protokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a2" data-correct="false">
+                        <label for="q40a2">Datenflusskontrolle</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a3" data-correct="true">
+                        <label for="q40a3">leichtes Protokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a4" data-correct="false">
+                        <label for="q40a4">Verbindungsorientiertes Transportprotokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a5" data-correct="true">
+                        <label for="q40a5">Keine Garantie der Nachrichtenübertragung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a6" data-correct="true">
+                        <label for="q40a6">Verbindungsloses Transportprotokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a7" data-correct="true">
+                        <label for="q40a7">Empfangende Entität muss sich nicht um Paketreihenfolge kümmern</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a8" data-correct="true">
+                        <label for="q40a8">Ungeordnet</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a9" data-correct="true">
+                        <label for="q40a9">Kleiner Header</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a10" data-correct="false">
+                        <label for="q40a10">Verwendet einen 3-Way Handshake zum Verbindungsaufbau</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a11" data-correct="false">
+                        <label for="q40a11">Empfangende Entität muss sich um Paketreihenfolge kümmern</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q40a12" data-correct="false">
+                        <label for="q40a12">Zuverlässig</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>41. Was ist der Zweck der CIDR-Notation (Classless Inter-Domain Routing) im IP-Subnetting?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q41a1" data-correct="true">
+                        <label for="q41a1">Zur Angabe der Größe eines Netzwerks</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q41a2" data-correct="false">
+                        <label for="q41a2">Zur Identifikation von Netzwerkgeräten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q41a3" data-correct="false">
+                        <label for="q41a3">Zur Verbindung von Netzwerken</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q41a4" data-correct="false">
+                        <label for="q41a4">Zur Identifikation von Subnetzen</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>42. Was bedeutet DNS Caching?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q42a1" data-correct="false">
+                        <label for="q42a1">Das Blockieren von DNS-Anfragen, die als unsicher eingestuft werden</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q42a2" data-correct="true">
+                        <label for="q42a2">Das Speichern von IP-Adressen für eine bestimmte Dauer zur Reduzierung der
+                            DNS-Abfragen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q42a3" data-correct="false">
+                        <label for="q42a3">Das Speichern von Webseiten für einen schnellen Zugriff</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q42a4" data-correct="false">
+                        <label for="q42a4">Das Anzeigen von DNS-Informationen im Webbrowser</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>43. Welches Netzwerkgerät teilt eine Netzverbindung in mehrere Ports auf und ermöglicht die
+                    Kommunikation zwischen den angeschlossenen Geräten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q43a1" data-correct="false">
+                        <label for="q43a1">Switch</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q43a2" data-correct="true">
+                        <label for="q43a2">Hub</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q43a3" data-correct="false">
+                        <label for="q43a3">Router</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q43a4" data-correct="false">
+                        <label for="q43a4">Bridge</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>44. Welches Netzwerkgerät verbindet drahtlose Geräte mit einem kabelgebundenen Netzwerk und
+                    ermöglicht die Weiterleitung von Datenpaketen zwischen ihnen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q44a1" data-correct="true">
+                        <label for="q44a1">Bridge</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q44a2" data-correct="false">
+                        <label for="q44a2">Hub</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q44a3" data-correct="false">
+                        <label for="q44a3">Router</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q44a4" data-correct="false">
+                        <label for="q44a4">Switch</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>45. Wie viele Bytes sind in einer IPv4-Adresse enthalten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q45a1" data-correct="false">
+                        <label for="q45a1">6 Bytes</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q45a2" data-correct="true">
+                        <label for="q45a2">4 Bytes</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q45a3" data-correct="false">
+                        <label for="q45a3">2 Bytes</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q45a4" data-correct="false">
+                        <label for="q45a4">8 Bytes</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>46. Was ist die Hauptfunktion eines Netzwerk-Switches im Zusammenhang mit Kollisionsdomänen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q46a1" data-correct="false">
+                        <label for="q46a1">Die Anzahl der Kollisionsdomänen zu reduzieren</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q46a2" data-correct="false">
+                        <label for="q46a2">Alle Ports in einer einzigen Kollisionsdomäne zu verbinden</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q46a3" data-correct="false">
+                        <label for="q46a3">Kollisionen zwischen verschiedenen Domänen zu ermöglichen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q46a4" data-correct="true">
+                        <label for="q46a4">Jeden Port in eine eigene Kollisionsdomäne zu konvertieren</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>47. Welches der folgenden Paare zeigt eine korrekte Beziehung zwischen DNS-Einträgen (Resource
+                    Records)?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q47a1" data-correct="true">
+                        <label for="q47a1">CNAME und IP-Adresse des Mail-Servers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q47a2" data-correct="false">
+                        <label for="q47a2">MX und IP-Adresse des Webservers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q47a3" data-correct="false">
+                        <label for="q47a3">MX und IP-Adresse des Webservers</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q47a4" data-correct="false">
+                        <label for="q47a4">CNAME und IP-Adresse des Mail-Servers</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>48. Was repräsentiert ein Subnetzmaskenbit, das auf 0 gesetzt ist?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q48a1" data-correct="false">
+                        <label for="q48a1">Eine Broadcast-Adresse</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q48a2" data-correct="false">
+                        <label for="q48a2">Ein Netzwerk</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q48a3" data-correct="false">
+                        <label for="q48a3">Ein Subnetz</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q48a4" data-correct="true">
+                        <label for="q48a4">Eine Hostadresse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>49. Was ist der Unterschied zwischen einer öffentlichen und einer privaten IP-Adresse?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q49a1" data-correct="false">
+                        <label for="q49a1">Eine öffentliche IP-Adresse ist nur innerhalb eines Heimnetzwerks sichtbar,
+                            während eine private IP-Adresse vom Internet aus sichtbar ist</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q49a2" data-correct="false">
+                        <label for="q49a2">Eine öffentliche IP-Adresse ist schneller als eine private</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q49a3" data-correct="false">
+                        <label for="q49a3">Es gibt keinen Unterschied zwischen einer öffentlichen und einer privaten
+                            IP-Adresse</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q49a4" data-correct="true">
+                        <label for="q49a4">Eine öffentliche IP-Adresse ist vom Internet aus sichtbar, während eine
+                            private IP-Adresse nur innerhalb eines Netzwerks sichtbar ist</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>50. In welchem der folgenden Netzwerkgeräte sind alle Ports in derselben Broadcast-Domäne?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q50a1" data-correct="false">
+                        <label for="q50a1">Router</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q50a2" data-correct="false">
+                        <label for="q50a2">Firewall</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q50a3" data-correct="false">
+                        <label for="q50a3">Switch</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q50a4" data-correct="true">
+                        <label for="q50a4">Hub</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>51. Welche Maßnahme wird ergriffen, wenn eine Kollision bei CSMA/CD erkannt wird?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q51a1" data-correct="false">
+                        <label for="q51a1">Die Übertragungsgeschwindigkeit wird automatisch reduziert, um weitere
+                            Kollisionen zu vermeiden.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q51a2" data-correct="false">
+                        <label for="q51a2">Das Gerät, das die Kollision erkannt hat, sendet ein spezielles Signal, um
+                            alle Teilnehmer über die Kollision zu informieren</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q51a3" data-correct="false">
+                        <label for="q51a3">Das Netzwerk wird vorübergehend deaktiviert, bis die Kollision behoben
+                            ist.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q51a4" data-correct="true">
+                        <label for="q51a4">Die Daten werden verloren und müssen erneut gesendet werden.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>52. Welche der folgenden Aussagen beschreibt den Hauptunterschied zwischen TCP und UDP?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q52a1" data-correct="false">
+                        <label for="q52a1">UDP verwendet das HTTP-Protokoll, TCP nicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q52a2" data-correct="true">
+                        <label for="q52a2">UDP bietet eine verbindungslose Übertragung, während TCP eine Verbindung
+                            aufbaut und aufrechterhält</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q52a3" data-correct="false">
+                        <label for="q52a3">TCP wird für lokale Netzwerke verwendet, UDP für das Internet</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q52a4" data-correct="false">
+                        <label for="q52a4">TCP ist schneller als UDP</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>53. Wie zeigt sich das Konzept der Peer-to-Peer-Kommunikation im Kontext der OSI-Schichten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q53a1" data-correct="false">
+                        <label for="q53a1">Datenkommunikation erfolgt nur auf der Anwendungsschicht auf verschiedenen
+                            Maschinen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q53a2" data-correct="false">
+                        <label for="q53a2">Datenkommunikation erfolgt nur zwischen physischen Schichten auf
+                            verschiedenen Maschinen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q53a3" data-correct="false">
+                        <label for="q53a3">Datenkommunikation erfolgt zwischen verschiedenen Schichten auf verschiedenen
+                            Maschinen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q53a4" data-correct="true">
+                        <label for="q53a4">Datenkommunikation erfolgt zwischen den gleichen Schichten auf verschiedenen
+                            Maschinen</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <button class="submit-btn" onclick="submitQuiz()">Finish Quiz</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>Quiz Results</h2>
+            <div class="score" id="score"></div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

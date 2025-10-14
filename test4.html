@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Test 1</a></li>
+            <li><a href="test2.html">Test 2</a></li>
+            <li><a href="test3.html">Test 3</a></li>
+            <li><a href="test4.html" class="active">Test 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Infra Zwischentest 1</h1>
+
+        <div id="quiz">
+            <div class="question">
+                <h3>54. Wie viele Teile (Oktette) gibt es in einer IPv4-Adresse und wie viele Bits umfasst jedes Oktett?
+                </h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q54a1" data-correct="false">
+                        <label for="q54a1">2 Teile, jedes mit 16 Bits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q54a2" data-correct="false">
+                        <label for="q54a2">10 Teile, jedes mit 10 Bits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q54a3" data-correct="true">
+                        <label for="q54a3">4 Teile, jedes mit 8 Bits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q54a4" data-correct="false">
+                        <label for="q54a4">8 Teile, jedes mit 4 Bits</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>55. Welcher der folgenden Vorteile ist ein charakteristisches Merkmal des UDP-Protokolls im
+                    Vergleich zum TCP-Protokoll?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q55a1" data-correct="true">
+                        <label for="q55a1">Weniger Overhead und schnellere Datenübertragung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q55a2" data-correct="false">
+                        <label for="q55a2">Mehrstufiger Verbindungsaufbau</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q55a3" data-correct="false">
+                        <label for="q55a3">Garantierte Paketzustellung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q55a4" data-correct="false">
+                        <label for="q55a4">Reihenfolge der Paketzustellung</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>56. Wie funktioniert CSMA/CD?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q56a1" data-correct="false">
+                        <label for="q56a1">Ein zentrales Gerät koordiniert den Zugriff der Teilnehmer auf das
+                            Netzwerk</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q56a2" data-correct="false">
+                        <label for="q56a2">Alle Geräte haben gleichzeitig Zugriff auf das Netzwerk und übertragen ihre
+                            Daten parallel</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q56a3" data-correct="true">
+                        <label for="q56a3">Die Geräte lauschen auf das Netzwerk, bevor sie Daten senden, und erkennen
+                            Kollisionen, falls sie auftreten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q56a4" data-correct="false">
+                        <label for="q56a4">Die Geräte teilen sich das Netzwerk in separate Zeitschlitze auf, um
+                            Kollisionen zu vermeiden</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>57. Welche der folgenden Aussagen über ARP ist falsch?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q57a1" data-correct="false">
+                        <label for="q57a1">ARP ist zustandslos und speichert keine Informationen über vorherige
+                            Anfragen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q57a2" data-correct="false">
+                        <label for="q57a2">ARP kann von einem Angreifer zur Durchführung von ARP-Spoofing-Angriffen
+                            missbraucht werden</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q57a3" data-correct="true">
+                        <label for="q57a3">ARP ist ein Protokoll auf der Netzwerkschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q57a4" data-correct="false">
+                        <label for="q57a4">ARP wird verwendet, um die MAC-Adresse zu finden, die zu einer bestimmten
+                            IP-Adresse gehört</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>58. Was passiert, wenn ein Gerät einen ARP Request sendet und keine Antwort erhält?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q58a1" data-correct="true">
+                        <label for="q58a1">Das Gerät kann keine Daten an das angeforderte Ziel senden</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q58a2" data-correct="false">
+                        <label for="q58a2">Das Gerät wechselt zu einem anderen Netzwerkprotokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q58a3" data-correct="false">
+                        <label for="q58a3">Das Gerät setzt die IP-Adresse auf Null</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q58a4" data-correct="false">
+                        <label for="q58a4">Das Gerät sendet den Request erneut</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>59. Bei der Gestaltung eines Netzwerkprotokolls unter Berücksichtigung des OSI-Modells, welche
+                    Schicht ist am wenigsten damit befasst, eine effiziente und sichere Datenübertragung zu
+                    gewährleisten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q59a1" data-correct="false">
+                        <label for="q59a1">Verbindungsschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q59a2" data-correct="false">
+                        <label for="q59a2">Transportschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q59a3" data-correct="true">
+                        <label for="q59a3">Sitzungsschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q59a4" data-correct="false">
+                        <label for="q59a4">Netzwerkschicht</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>60. Was wird im TCP-Protokoll verwendet, um den Fluss der Daten zu steuern und Datenverlust zu
+                    vermeiden?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q60a1" data-correct="true">
+                        <label for="q60a1">Flow Control und Congestion Control Mechanismen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q60a2" data-correct="false">
+                        <label for="q60a2">Multicast-Adresse</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q60a3" data-correct="false">
+                        <label for="q60a3">Synchronisationsbits</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q60a4" data-correct="false">
+                        <label for="q60a4">Verbindungsaufbau- und Trennungsflags</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>61. Wenn Sie eine Datei von einem Server auf einem anderen Kontinent erhalten, durch welche der
+                    folgenden Schichten im OSI-Modell werden die Daten nicht durchlaufen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q61a1" data-correct="false">
+                        <label for="q61a1">Netzwerkschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q61a2" data-correct="false">
+                        <label for="q61a2">Sitzungsschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q61a3" data-correct="false">
+                        <label for="q61a3">Verbindungsschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q61a4" data-correct="true">
+                        <label for="q61a4">Alle Schichten werden durchlaufen</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>62. Was passiert, wenn ein Gerät eine IP-Adresse mit einer Subnetzmaske erhält, die nicht zum
+                    Netzwerk passt?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q62a1" data-correct="true">
+                        <label for="q62a1">Das Gerät kann nicht auf das Netzwerk zugreifen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q62a2" data-correct="false">
+                        <label for="q62a2">Das Gerät kann auf das Netzwerk zugreifen, aber es kann keine Verbindungen zu
+                            anderen Netzwerken herstellen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q62a3" data-correct="false">
+                        <label for="q62a3">Das Gerät wird ein neues Netzwerk erstellen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q62a4" data-correct="false">
+                        <label for="q62a4">Das Gerät wird automatisch korrigiert</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>63. Welche der folgenden Aussagen über Broadcast-Domänen ist richtig?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q63a1" data-correct="true">
+                        <label for="q63a1">Jeder Computer in einer Broadcast-Domäne kann Broadcasts senden und
+                            empfangen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q63a2" data-correct="false">
+                        <label for="q63a2">Eine Broadcast-Domäne ist ein Netzwerksegment, das keine Broadcasts empfangen
+                            kann</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q63a3" data-correct="false">
+                        <label for="q63a3">In einer Broadcast-Domäne können nur spezifische Computer Broadcasts
+                            senden</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q63a4" data-correct="false">
+                        <label for="q63a4">Broadcast-Domänen dienen nur dazu, Kollisionen in Netzwerken zu
+                            verhindern</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>64. Was ist die Hauptaufgabe des Internet Protocols (IP)?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q64a1" data-correct="false">
+                        <label for="q64a1">Netzwerkhardware zu steuern</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q64a2" data-correct="false">
+                        <label for="q64a2">Webseiten in Ihrem Browser anzuzeigen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q64a3" data-correct="false">
+                        <label for="q64a3">Viren und Malware blockieren</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q64a4" data-correct="true">
+                        <label for="q64a4">Datenübertragung zwischen Computern zu ermöglichen</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <button class="submit-btn" onclick="submitQuiz()">Finish Quiz</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>Quiz Results</h2>
+            <div class="score" id="score"></div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>

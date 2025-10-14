@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Test 1</a></li>
+            <li><a href="test2.html">Test 2</a></li>
+            <li><a href="test3.html">Test 3</a></li>
+            <li><a href="test4.html">Test 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Infra Zwischentest 1</h1>
+
+        <div id="quiz">
+            <div class="question">
+                <h3>1. Welche Funktion hat CSMA/CD in Computernetzwerken?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q1a1" data-correct="false">
+                        <label for="q1a1">Fehlererkennung und -korrektur</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q1a2" data-correct="false">
+                        <label for="q1a2">Vereinfachung der Datenverschlüsselung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q1a3" data-correct="true">
+                        <label for="q1a3">Verhinderung von Datenkollisionen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q1a4" data-correct="false">
+                        <label for="q1a4">Maximierung der Übertragungsgeschwindigkeit</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. In welchem Protokoll kann ein Client eine Nachricht an mehrere Server gleichzeitig senden
+                    (Multicast)?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q2a1" data-correct="false">
+                        <label for="q2a1">DHCP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2a2" data-correct="true">
+                        <label for="q2a2">UDP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2a3" data-correct="false">
+                        <label for="q2a3">TCP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q2a4" data-correct="false">
+                        <label for="q2a4">DNS</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>3. Welches Protokoll verwendet DNS hauptsächlich für die Übertragung von Daten?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q3a1" data-correct="false">
+                        <label for="q3a1">HTTP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q3a2" data-correct="false">
+                        <label for="q3a2">TCP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q3a3" data-correct="true">
+                        <label for="q3a3">UDP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q3a4" data-correct="false">
+                        <label for="q3a4">FTP</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>4. Was ist die Hauptfunktion des ARP-Protokolls (Address Resolution Protocol)?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q4a1" data-correct="false">
+                        <label for="q4a1">Die Verwaltung von TCP-Verbindungen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4a2" data-correct="false">
+                        <label for="q4a2">Die Unterstützung des DHCP-Protokolls</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4a3" data-correct="false">
+                        <label for="q4a3">Die Umwandlung von MAC-Adressen in IP-Adressen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q4a4" data-correct="true">
+                        <label for="q4a4">Die Umwandlung von IP-Adressen in MAC-Adressen</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>5. Wie beeinflusst ein Router die Kollisions- und Broadcast-Domänen in einem Netzwerk?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q5a1" data-correct="true">
+                        <label for="q5a1">Ein Router teilt sowohl die Kollisions- als auch die Broadcast-Domäne.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q5a2" data-correct="false">
+                        <label for="q5a2">Ein Router reduziert die Kollisionsdomäne und erweitert die
+                            Broadcast-Domäne.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q5a3" data-correct="false">
+                        <label for="q5a3">Ein Router erweitert die Kollisionsdomäne, reduziert aber die
+                            Broadcast-Domäne.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q5a4" data-correct="false">
+                        <label for="q5a4">Ein Router hat keinen Einfluss auf die Kollisions- oder
+                            Broadcast-Domänen.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>6. Was passiert beim Prozess der DNS-Auflösung?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q6a1" data-correct="false">
+                        <label for="q6a1">Das Umwandeln von einer IP-Adresse in einen Domainnamen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q6a2" data-correct="false">
+                        <label for="q6a2">Das Auffinden einer spezifischen Datei auf einem Webserver</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q6a3" data-correct="false">
+                        <label for="q6a3">Das Umwandeln von Text in binäre Daten</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q6a4" data-correct="true">
+                        <label for="q6a4">Das Umwandeln von einem Domainnamen in eine IP-Adresse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>7. Wie ist die Rolle von ARP im TCP/IP-Modell?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q7a1" data-correct="true">
+                        <label for="q7a1">Es operiert in der Verbindungsschicht.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q7a2" data-correct="false">
+                        <label for="q7a2">Es operiert in der Transportschicht.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q7a3" data-correct="false">
+                        <label for="q7a3">Es operiert in der Anwendungsschicht.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q7a4" data-correct="false">
+                        <label for="q7a4">Es operiert in der Netzwerkschicht.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>8. Welche Aussage über IP-Adressen ist korrekt?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q8a1" data-correct="false">
+                        <label for="q8a1">Eine statische IP-Adresse ändert sich jedes Mal, wenn sie sich mit dem
+                            Internet verbindet.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q8a2" data-correct="false">
+                        <label for="q8a2">Eine dynamische IP-Adresse bleibt immer gleich.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q8a3" data-correct="false">
+                        <label for="q8a3">Eine dynamische IP-Adresse kann nicht für Server verwendet werden.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q8a4" data-correct="true">
+                        <label for="q8a4">Eine statische IP-Adresse bleibt immer gleich.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>9. Was repräsentiert ein Subnetzmaskenbit, das auf 0 gesetzt ist?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q9a1" data-correct="false">
+                        <label for="q9a1">Ein Subnetz</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q9a2" data-correct="false">
+                        <label for="q9a2">Ein Netzwerk</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q9a3" data-correct="true">
+                        <label for="q9a3">Eine Hostadresse</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q9a4" data-correct="false">
+                        <label for="q9a4">Eine Broadcast-Adresse</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>10. Welches Netzwerkgerät leitet Datenpakete basierend auf IP-Adressen zwischen verschiedenen
+                    Netzwerken weiter?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q10a1" data-correct="false">
+                        <label for="q10a1">Hub</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q10a2" data-correct="false">
+                        <label for="q10a2">Bridge</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q10a3" data-correct="false">
+                        <label for="q10a3">Switch</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q10a4" data-correct="true">
+                        <label for="q10a4">Router</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>11. Was ist eine Kollisionsdomäne in einem Netzwerk?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q11a1" data-correct="false">
+                        <label for="q11a1">Ein Bereich des Netzwerks, in dem Daten nur von einem Gerät empfangen werden
+                            können.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q11a2" data-correct="false">
+                        <label for="q11a2">Ein Bereich des Netzwerks, in dem alle Geräte gleichzeitig Daten senden
+                            können.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q11a3" data-correct="true">
+                        <label for="q11a3">Ein Bereich des Netzwerks, in dem nur ein Gerät gleichzeitig Daten senden
+                            kann.</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q11a4" data-correct="false">
+                        <label for="q11a4">Ein Bereich des Netzwerks, in dem keine Daten gesendet werden können.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>12. Welches Protokoll garantiert die Auslieferung von Paketen durch eine Verbindung mit Überprüfung
+                    und Wiederholung?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q12a1" data-correct="false">
+                        <label for="q12a1">UDP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q12a2" data-correct="false">
+                        <label for="q12a2">HTTP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q12a3" data-correct="true">
+                        <label for="q12a3">TCP</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q12a4" data-correct="false">
+                        <label for="q12a4">IP</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>13. Welche Aussage ist richtig über das IP-Protokoll?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q13a1" data-correct="false">
+                        <label for="q13a1">Es garantiert die fehlerfreie Lieferung von Paketen</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q13a2" data-correct="false">
+                        <label for="q13a2">Es handelt sich um ein verbindungsorientiertes Protokoll</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q13a3" data-correct="false">
+                        <label for="q13a3">Es wird ausschließlich für E-Mail-Kommunikation verwendet</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q13a4" data-correct="true">
+                        <label for="q13a4">Es ist ein verbindungsloses Protokoll, das keine Garantie für die Lieferung
+                            von Paketen bietet</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>14. Was bedeutet CSMA/CD?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q14a1" data-correct="true">
+                        <label for="q14a1">Carrier Sense Multiple Access / Collision Detection</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q14a2" data-correct="false">
+                        <label for="q14a2">Code Sequence Multiple Access / Collision Detection</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q14a3" data-correct="false">
+                        <label for="q14a3">Collision Sense Multiple Allocation / Carrier Detection</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q14a4" data-correct="false">
+                        <label for="q14a4">Computer Science Multiple Allocation / Collision Detection</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>15. Welches Netzwerkgerät verbindet mehrere Geräte in einem Netzwerksegment und ermöglicht die
+                    Weiterleitung von Datenpaketen an die richtigen Zieladressen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q15a1" data-correct="false">
+                        <label for="q15a1">Hub</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q15a2" data-correct="false">
+                        <label for="q15a2">Router</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q15a3" data-correct="false">
+                        <label for="q15a3">Bridge</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q15a4" data-correct="true">
+                        <label for="q15a4">Switch</label>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h3>16. Bei der Fehlersuche bei einem Problem, bei dem ein Computer keine Daten an einen Server senden
+                    kann, welche OSI-Schichten sind am relevantesten zu untersuchen?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="checkbox" id="q16a1" data-correct="false">
+                        <label for="q16a1">Alle Schichten benötigen gleiche Berücksichtigung</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q16a2" data-correct="true">
+                        <label for="q16a2">Physische Schicht, Verbindungsschicht und Netzwerkschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q16a3" data-correct="false">
+                        <label for="q16a3">Transportschicht, Sitzungsschicht und Darstellungsschicht</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="q16a4" data-correct="false">
+                        <label for="q16a4">Netzwerkschicht, Transportschicht und Anwendungsschicht</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button class="submit-btn" onclick="submitQuiz()">Finish Quiz</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>Quiz Results</h2>
+            <div class="score" id="score"></div>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
